@@ -18,6 +18,12 @@
             grid-template-columns: 1fr 1fr;
         }
         
+        .preco {
+            position: relative;
+            top: 200px;
+            border: solid red 1px;
+        }
+        
         .menu {
             display: block;
             position: absolute;
@@ -27,6 +33,16 @@
             transform: translateY(-25%);
             /* width: 300px; */
             /* height: 20vh; */
+        }
+        
+        .bts {
+            /* display: grid;
+            grid-template-rows: 150px;
+            grid-template-columns: 200px 100px; */
+            position: absolute;
+            top: 200px;
+            left: 550px;
+            border: solid 1px red;
         }
         
         .bt {
@@ -77,6 +93,7 @@
             }
             .placa {
                 display: block;
+                align-items: right;
             }
             body {
                 /* border: solid 1px red; */
@@ -98,19 +115,37 @@
 </head>
 
 <body>
+
     <div class="placa" align="right">
         <img src="src/PLACA AZUL.bmp" class="p_azul" alt="">
         <div class="descricao">produto novo de 2kg</div>
         <div class="valor">2,50</div>
-        <div>
-            <input type="color"> Alterar Cor</input>
-            <input type="number"> preço</input>
-            <input type="number"> </input>
+        <div class="bts" align="left">
+            <div class="texto">
+
+                <div>
+
+                    <input type="text"> TEXTO
+                </div>
+                <div>
+
+                    <input type="color">Cor</input>
+                </div>
+            </div>
+
+            <div class="preco">
+                <div>
+                    <input type="text"> PREÇO</input>
+                </div>
+                <div>
+                    <input type="color">cor</input>
+                </div>
+            </div>
+
         </div>
-
     </div>
-    <div align="center " class="menu ">
 
+    <div align="center " class="menu ">
         <!-- <div>
             Digita o nome do produto: <input type="text ">
         </div>
