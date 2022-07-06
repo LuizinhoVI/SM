@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    /* border: solid 1px red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.preco {
+    position: relative;
+    top: 200px;
+    /* border: solid red 1px; */
+}
+
+.menu {
+    display: block;
+    position: absolute;
+    /* border: solid red 1px; */
+    top: 90%;
+    left: 50vw;
+    transform: translateX(-5vw);
+    /* width: 300px; */
+    /* height: 20vh; */
+}
+
+.bts {
+    /* display: grid;
+    grid-template-rows: 150px;
+    grid-template-columns: 200px 100px; */
+    position: absolute;
+    top: -11vh;
+    left: -5vw;
+    /* border: solid 1px red; */
+}
+
+.bt {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.p_azul {
+    width: 14.5cm;
+    height: 19.5cm;
+    /* border: blue solid 1px; */
+    position: absolute;
+    display: block;
+    /* margin-top: -14.7cm; */
+    /* margin-left: 10.8cm; */
+}
+
+.descricao {
+    position: absolute;
+    /* margin-top: -14.7cm; */
+    /* margin-left: 11cm; */
+    margin-top: 4.8cm;
+    margin-left: 0.5cm;
+    font-size: 45px;
+    /* border: solid red 1px; */
+    width: 14cm;
+    height: 2.2cm;
+    text-align: left;
+}
+
+.editavel {
+    top: 0vh;
+}
+
+.valor {
+    position: absolute;
+    font-size: 150px;
+    margin-top: 10cm;
+    margin-left: 5cm;
+    /* border: solid red 1px; */
+    width: 350px;
+    height: 150px;
+    text-align: center;
+    justify-content: center;
+}
+
+.valor_editavel {
+    display: block;
+    top: 0vh;
+    right: -6vh;
+    font-size: 15vh;
+}
+
+.placa {
+    display: none;
+    align-items: right;
+    /* border: solid red 1px; */
+}
+
+.placa_azul {
+    display: block;
+    position: relative;
+    left: 50vw;
+    transform: translateX(-25vw);
+    /* border: solid red 1px; */
+    height: 80vh;
+}
+
+.foto {
+    display: block;
+    width: 50vw;
+    height: 80vh;
+}
+
+.modelo_placa {
+    /* width: 10fr;
+    height: 10fr; */
+    /* border: solid red 1px; */
+}
+
+@media print {
+    .valor_editavel {
+        display: none !important;
+    }
+    .editavel {
+        display: none !important;
+    }
+    .menu {
+        display: none;
+    }
+    .placa {
+        display: block;
+        align-items: right;
+    }
+    body {
+        /* border: solid 1px red; */
+        display: block;
+        grid-template-columns: 1fr 1fr;
+    }
+    .p_azul {
+        display: none;
+    }
+    .descricao {
+        display: block;
+    }
+    .valor {
+        display: block;
+    }
+    .bts {
+        display: none;
+    }
+    .foto {
+        display: none;
+    }
+}
